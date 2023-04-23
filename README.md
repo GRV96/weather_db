@@ -1,2 +1,3 @@
 # weather_db
-An application to learn NodeJS
+
+A weather condition database for learning NodeJS
