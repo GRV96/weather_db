@@ -10,12 +10,12 @@ app.get("/", (request, response) => {
 
 app.post("/record", (request, response) => {
 	var reqBody = request.body
-	var record: WeatherRecord = new WeatherRecord(
+	var weatherRecord: WeatherRecord = new WeatherRecord(
 		reqBody.moment,
 		reqBody.temperature,
 		reqBody.precipProb,
 		reqBody.windSpeed);
-	console.log(`${record}`);
+	console.log(`${weatherRecord}`);
 	response.sendStatus(200);
 });
 
