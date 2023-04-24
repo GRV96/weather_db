@@ -1,7 +1,7 @@
 {
   "name": "weather_db",
   "version": "1.0.0",
-  "description": "A weather condition database",
+  "description": "A weather database",
   "main": "main.js",
   "scripts": {
     "start": "ts-node ./src/main.ts"
