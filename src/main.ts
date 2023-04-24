@@ -1,6 +1,6 @@
 import * as express from "express";
 import * as bodyParser from 'body-parser';
-import { WeatherRecord } from "weather_record";
+import { WeatherRecord } from "./weather_record";
 
 const app = express();
 app.use(bodyParser.json());
@@ -12,10 +12,9 @@ app.get("/", (request, response) => {
 
 app.post("/record", (request, response) => {
 	var reqBody = request.body
-	console.log(`Moment: ${reqBody.moment}`);
-	console.log(`Temperature: ${reqBody.temperature}`);
-	console.log(`Precipitation probability: ${reqBody.precipProb}`);
-	console.log(`Wind speed: ${reqBody.windSpeed}`);
+	var record: WeatherRecord = new WeatherRecord(
+		reqBody.moment, reqBody.temperature, reqBody.precipProb, reqBody.windSpeed);
+	console.log(`${record}`);
 	response.sendStatus(200);
 });
 
