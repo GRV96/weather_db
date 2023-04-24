@@ -13,6 +13,6 @@ export class WeatherRecord {
 	}
 
 	toString(): string {
-		return `${this.moment}; ${this.temperature}°C; ${this.precipProb*100}%; ${this.windSpeed} km/h`;
+		return `${this.moment.toISOString()}; ${this.temperature}°C; ${this.precipProb*100}%; ${this.windSpeed} km/h`;
 	}
 }
