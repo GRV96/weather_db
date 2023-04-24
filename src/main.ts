@@ -11,7 +11,10 @@ app.get("/", (request, response) => {
 app.post("/record", (request, response) => {
 	var reqBody = request.body
 	var record: WeatherRecord = new WeatherRecord(
-		reqBody.moment, reqBody.temperature, reqBody.precipProb, reqBody.windSpeed);
+		reqBody.moment,
+		reqBody.temperature,
+		reqBody.precipProb,
+		reqBody.windSpeed);
 	console.log(`${record}`);
 	response.sendStatus(200);
 });
