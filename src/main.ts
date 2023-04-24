@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (request, response) => {
-	response.status(200).send("Hello, world!");
+	response.status(200).send("A weather database");
 });
 
 app.post("/record", (request, response) => {
