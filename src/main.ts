@@ -19,6 +19,4 @@ app.post("/record", (request, response) => {
 	response.sendStatus(200);
 });
 
-console.log("weather_db running.");
-
-app.listen(5000);
+app.listen(5000, "weather_db running.");
