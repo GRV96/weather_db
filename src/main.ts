@@ -19,4 +19,6 @@ app.post("/record", (request, response) => {
 	response.sendStatus(200);
 });
 
-app.listen(5000, "weather_db running.");
+console.log("weather_db running.");
+
+app.listen(5000);
