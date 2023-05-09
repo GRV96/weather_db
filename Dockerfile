@@ -1,6 +1,6 @@
 FROM node:20.1.0-alpine3.17
 
-WORKDIR weather_db
+WORKDIR /weather_db
 
 COPY . .
 
