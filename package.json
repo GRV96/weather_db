@@ -17,6 +17,7 @@
   "homepage": "https://github.com/GRV96/weather_db#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "postgres": "^3.3.4",
     "ts-node": "^10.9.1"
   }
 }
