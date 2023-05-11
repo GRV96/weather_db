@@ -2,7 +2,7 @@
 
 ## Français
 
-Une base de données météorologique pour apprendre NodeJS et Docker.
+Une base de données météorologiques pour apprendre NodeJS et Docker.
 
 Lancez le conteneur Docker en mode détaché.
 
@@ -33,7 +33,7 @@ Exemple de corps de requête:
 }
 ```
 
-La probabilité de précipitation devrait être de 0,00 à 1,00. Dans l'exemple
+La probabilité de précipitations devrait être de 0,00 à 1,00. Dans l'exemple
 ci-dessus, la température est en degrés Celsius, et la vitesse du vent est en
 kilomètres à l'heure.
 
